@@ -12,7 +12,7 @@ document.getElementById("button-logout").addEventListener("click", () => {
     sessionStorage.removeItem("logged");
     localStorage.removeItem("session");
 
-    window.location.href = "../../index.html";
+    window.location.href = "index.html";
 });
 document.getElementById("transactions-button").addEventListener("click", function (e) {
     console.log(e)
@@ -51,7 +51,7 @@ function checkLogged() {
     }
 
     if (!logged) {
-        window.location.href = "../../index.html";
+        window.location.href = "index.html";
         return;
     }
 
